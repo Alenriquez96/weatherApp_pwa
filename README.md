@@ -48,7 +48,7 @@ npm run build
 ```
 
 After that, everything is ready to deploy.
-Visit [**GO TO THE APP**](https://app.netlify.com/)
-And drag your build folder into it to deploy your site.
+Visit [**Netlify**](https://app.netlify.com/) or any deployment site.
+Drag your build folder into it to deploy your site.
 
 Congrats, your PWA is ready to be used.
