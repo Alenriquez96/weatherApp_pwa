@@ -21,6 +21,8 @@ const Weather = (props) => {
         return <img className='weatherIcon' src='https://cdn-icons-png.flaticon.com/512/2531/2531622.png' id='fog'/>
       } else if(cityData.weather[0].main === "Drizzle"){
         return <img className='weatherIcon' id='drizzle' src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather05-512.png"  />
+      } else if (cityData.weather[0].main === "Haze"){
+        return <img className='weatherIcon' src="https://cdn-icons-png.flaticon.com/512/1779/1779807.png" alt="" />
       }
     }
 
