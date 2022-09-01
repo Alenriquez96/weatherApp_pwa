@@ -15,7 +15,9 @@ Once your app is ready, go to this file
 ```javascript
 manifest.json
 ```
-![img](./src/assets/manifest.png)
+![img](./src/assets/manifestjson.png)
+
+
 Modify the object keys as you want (short_name,name,icons). Then, go to this file:
 ```javascript
 index.js
@@ -42,6 +44,8 @@ import PWAPrompt from 'react-ios-pwa-prompt';
 <App /> <PWAPrompt copyTitle="App title"/>
 ```
 The last one must be after your App component.
+
+
 ![img](./src/assets/index.js.png)
 
 
@@ -55,7 +59,11 @@ Visit [**Netlify**](https://app.netlify.com/) or any deployment site.
 Drag your build folder into it to deploy your site.
 
 Congrats, your PWA is ready to be used.
+
+
 ![img](./src/assets/pwa_icon.png)
+
+
 ![img](./src/assets/pwa_muestra.png)
 
 
