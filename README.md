@@ -2,7 +2,7 @@
 
 ## [**GO TO THE APP**](https://weather-pwa-appreact.netlify.app/)
 
-##Steps to develop a PWA (Progressive web app)
+## Steps to develop a PWA (Progressive web app)
 
 ## Installation & Start
 ```javascript
@@ -15,3 +15,40 @@ Once your app is ready, go to this file
 ```javascript
 manifest.json
 ```
+Modify the object keys as you want (short_name,name,icons). Then, go to this file:
+```javascript
+index.js
+```
+Change this method:
+```javascript
+serviceWorkerRegistration.unregister();
+```
+for this one:
+```javascript
+serviceWorkerRegistration.register();
+```
+
+Install this dependency:
+```javascript
+npm i react-ios-pwa-prompt
+```
+
+Go back to index.js and put this lines:
+```javascript
+import PWAPrompt from 'react-ios-pwa-prompt';
+```
+```javascript
+<App /> <PWAPrompt copyTitle="App title"/>
+```
+The last one must be after your App component.
+
+Now you are ready to run this command:
+```javascript
+npm run build
+```
+
+After that, everything is ready to deploy.
+Visit [**GO TO THE APP**](https://app.netlify.com/)
+And drag your build folder into it to deploy your site.
+
+Congrats, your PWA is ready to be used.
