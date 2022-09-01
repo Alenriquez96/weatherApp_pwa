@@ -9,7 +9,7 @@ const Weather = (props) => {
 
 
     const showIcon = () =>{
-      if (cityData.weather[0].main==="Clear") {
+      if (cityData.weather[0].main === "Clear") {
         return <img className='weatherIcon' id="clear" src="https://i.pinimg.com/originals/53/22/c2/5322c2cad533e12e552d0dfdc89b4c25.png"/>
       } else if(cityData.weather[0].main==="Clouds") {
         return <img className='weatherIcon' id="clouds" src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png"/>
