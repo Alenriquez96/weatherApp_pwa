@@ -1,4 +1,4 @@
 # weather app pwa
 
-# [**GO TO THE APP**](https://shopping-cart-react-reduxx.herokuapp.com/)
+# [**GO TO THE APP**](https://weather-pwa-appreact.netlify.app/)
 
