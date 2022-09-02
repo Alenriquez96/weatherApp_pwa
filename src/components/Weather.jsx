@@ -47,17 +47,18 @@ const Weather = (props) => {
     >
         {flip===true?
         <article style={{display : "flex", flexDirection: "column", justifyContent: "center"}}>
-          <p>Feels like degrees: {(cityData.main.feels_like - 273.15).toFixed(2)} Cº</p>
-          <p>Humidity {cityData.main.humidity}%</p>
+          <p><span className='details'>Feels like degrees:</span> {(cityData.main.feels_like - 273.15).toFixed(2)} Cº</p>
+          <p><span className='details'>Humidity</span> {cityData.main.humidity}%</p>
           {cityData.main.grnd_level?<p>Ground level {cityData.main.grnd_level} mts</p>:""}
-          <p>Pressure {cityData.main.pressure} hPa</p>
-          <p>Wind:</p>
-          <li>Degrees: {cityData.wind.deg}º</li>
-          <li>Speed: {cityData.wind.speed} km/h</li>
-          <p>Coordinates:</p>
-          <li>Latitude: {cityData.coord.lat}</li>
-          <li>Latitude: {cityData.coord.lon}</li>
-        </article>:
+          <p><span className='details'>Pressure</span> {cityData.main.pressure} hPa</p>
+          <p><span className='details'>Wind:</span></p>
+          <li><span className='details'>Degrees:</span> {cityData.wind.deg}º</li>
+          <li><span className='details'>Speed:</span> {cityData.wind.speed} km/h</li>
+          <p><span className='details'>Coordinates:</span></p>
+          <li><span className='details'>Latitude:</span> {cityData.coord.lat}</li>
+          <li><span className='details'>Latitude:</span> {cityData.coord.lon}</li>
+        </article>
+        :
         <article>
           <div id='countryData'>
             {countryFlag()}
@@ -68,8 +69,8 @@ const Weather = (props) => {
             <h1>{(cityData.main.temp - 273.15).toFixed(2)} Cº</h1> 
           </div>
           <div className='minmax'>
-            <p>Max: {(cityData.main.temp_max - 273.15).toFixed(2)} Cº</p>
-            <p>Min: {(cityData.main.temp_min - 273.15).toFixed(2)} Cº</p>
+            <p><img style={{height:"12px"}} src='https://img.icons8.com/ios-filled/344/long-arrow-up.png'/>Max: {(cityData.main.temp_max - 273.15).toFixed(2)} Cº</p>
+            <p><img style={{height:"12px"}} src='https://img.icons8.com/ios-filled/344/long-arrow-down.png'/>Min: {(cityData.main.temp_min - 273.15).toFixed(2)} Cº</p>
           </div>
         </article>}   
         <motion.button 

@@ -40,10 +40,9 @@ const Fetch = () => {
         <div>
             <input type="text" id='cityName' name='city' placeholder='Introduce city'/>
             <motion.button             
-            whileHover={{
-            scale: 1.3,
-            transition: { duration: 0.3 },
-            }} type="submit" value="Submit"><img style={{borderRadius:"5px"}} src="https://i.pinimg.com/originals/b7/02/af/b702afc7b811840ebc49037cdc98bc45.jpg" alt="" /></motion.button>
+            whileTap={{ scale: 0.5 }} type="submit" value="Submit">
+                <img style={{borderRadius:"5px"}} src="https://img.icons8.com/color/72/search--v1.png" alt="" />
+            </motion.button>
         </div>
         {error==="ERR_BAD_REQUEST"?<h3 style={{color:"red"}}>City was not found</h3>:""}
     </form>
