@@ -1,6 +1,7 @@
 # weather app pwa
 
-## [**GO TO THE APP**](https://weather-pwa-appreact.netlify.app/)
+## Demo 
+[**Live demo**](https://weather-pwa-appreact.netlify.app/)
 
 ## Steps to develop a PWA (Progressive web app)
 
