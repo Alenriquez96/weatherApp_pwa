@@ -69,8 +69,8 @@ const Weather = (props) => {
             <h1>{(cityData.main.temp - 273.15).toFixed(2)} Cº</h1> 
           </div>
           <div className='minmax'>
-            <p><img style={{height:"12px"}} src='https://img.icons8.com/ios-filled/344/long-arrow-up.png'/>Max: {(cityData.main.temp_max - 273.15).toFixed(2)} Cº</p>
-            <p><img style={{height:"12px"}} src='https://img.icons8.com/ios-filled/344/long-arrow-down.png'/>Min: {(cityData.main.temp_min - 273.15).toFixed(2)} Cº</p>
+            <p><img style={{height:"12px"}} src='https://img.icons8.com/office/344/long-arrow-up.png'/>Max: {(cityData.main.temp_max - 273.15).toFixed(2)} Cº</p>
+            <p><img style={{height:"12px"}} src='https://img.icons8.com/office/344/long-arrow-down.png'/>Min: {(cityData.main.temp_min - 273.15).toFixed(2)} Cº</p>
           </div>
         </article>}   
         <motion.button 
