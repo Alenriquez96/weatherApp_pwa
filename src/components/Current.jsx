@@ -33,7 +33,7 @@ const Current = () => {
 
 
     return (
-        <motion.button whileTap={{ scale: 0.8 }} id='currentLocBtn' onClick={handleClick}>Search current location<img style={{height:"20px", marginLeft:"3px"}} src='https://img.icons8.com/arcade/344/experimental-marker-arcade.png'/></motion.button >
+        <motion.button whileTap={{ scale: 0.8 }} id='currentLocBtn' onClick={handleClick}>Search current location<img style={{height:"20px", marginLeft:"3px"}} src='https://img.icons8.com/arcade/344/experimental-marker-arcade.png' alt=''/></motion.button >
     )
 }
 
