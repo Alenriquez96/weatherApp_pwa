@@ -39,8 +39,8 @@ form>div{
 }
 
 form>div>input{
-  height: 25px;
-  border-radius: 7px;
+  height: 37px;
+  border-radius: 21px;
   text-align: center;
   background-color: #4aa2f04d;
   color: white;
@@ -48,7 +48,7 @@ form>div>input{
 }
 
 section{
-  border-radius: 12px;
+  border-radius: 57px;
   background-color: #4aa2f04d;
   display: flex;
   flex-direction: column;
@@ -97,7 +97,7 @@ h1{
 }
 
 #btnSearchs{
-  height: 26px;
+  height: 37px;
   width: 100px;
   border-radius: 21px;
   border: none;
@@ -112,8 +112,8 @@ h1{
 
 #currentLocBtn{
   cursor: pointer;
-  border-radius: 16px;
-  height: 31px;
+  border-radius: 31px;
+  height: 50px;
   border: none;
   color: grey;
   background-color: #d0d0e7;

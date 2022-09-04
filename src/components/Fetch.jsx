@@ -14,6 +14,7 @@ const Fetch = () => {
     const handleSubmit = (e) =>{
         e.preventDefault();
         setCityName(e.target.city.value)
+        e.target.city.value="";
     }
 
     useEffect(() => {
